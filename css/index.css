@@ -1,0 +1,20 @@
+* {
+    font-family: Helvetica;
+}
+
+th {
+    font-weight: bold;
+    border: 2px solid black;
+    color: steelblue;
+    width:350px;
+    background-color: #ccc;
+}
+
+table {
+    border-spacing: 0.7px;
+}
+
+td {
+    border: 2px solid black;
+    text-align: center;
+}

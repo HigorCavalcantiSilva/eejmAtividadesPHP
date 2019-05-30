@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index2.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>EEJM - Tarefas</title>
+</head>
+<body>
+    <div style="padding-top: 40px;padding-right: 40px;padding-bottom: 40px;padding-left: 40px;">
+    <form method="POST" action="reg.php">
+        <h1><b>INSERIR NOVA TAREFA</b></h1><br>
+        <label for="data" class="lbc">DATA: </label>
+        <input type="date" name="data" id="data" class="form-control" required><br/><br/>
+        <label for="materia" class="lbc">MATÉRIA: </label>
+        <select name="materia" id="materia" class="form-control" required>
+            <option value="NULL">(Selecione)</option>
+            <option value="Artes">Artes</option>
+            <option value="Biologia">Biologia</option>
+            <option value="Educacão-Física">Educação Física</option>
+            <option value="Filosofia">Filosofia</option>
+            <option value="Física">Física</option>
+            <option value="Geografia">Geografia</option>
+            <option value="História">História</option>
+            <option value="Inglês">Inglês</option>
+            <option value="Matemática">Matemática</option>
+            <option value="Português">Português</option>
+            <option value="Química">Química</option>
+            <option value="Sociologia">Sociologia</option>
+        </select><br/><br/>
+        <label for="conteudo" class="lbc">CONTEÚDO: </label>
+        <textarea name="conteudo" class="form-control" id="conteudo"></textarea></br>
+        <div>
+            <input type="submit" value="Salvar no Banco" class="btn btn-success" style="position: relative">
+            <a class="btn btn-success" class="bt" id="bt-fix" href="index.php" style="margin-left: 30px; position: relative;">Ver Atividades</a>
+        </div>
+    </form>
+    </div>
+    <h4 style="margin-top: -3px; text-align: left; font-size: 20px; bottom: 0; position: relative;">Desenvolvedor: Higor Hicker</h4>
+</body>
+</html>
