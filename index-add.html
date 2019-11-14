@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/index2.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
     <title>EEJM - Tarefas</title>
 </head>
 <body>
@@ -41,4 +42,17 @@
     </div>
     <h4 style="margin-top: -3px; text-align: left; font-size: 20px; bottom: 0; position: relative;">Desenvolvedor: Higor Hicker</h4>
 </body>
+<script>
+    var id = document.querySelector("#conteudo");
+    var texto;
+
+    id.addEventListener("keyup", function(e){
+        if(e.keyCode == 13){
+            texto = id.value;
+            id.value = "";
+            id.value += texto.substr(0,(texto.length - 1));
+            alert("Enter não permitido. Como sugestão use ; para separar as sentenças!");
+        }
+    });
+</script>
 </html>

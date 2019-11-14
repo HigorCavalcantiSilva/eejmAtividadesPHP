@@ -1,28 +1,17 @@
 <?php
 
+    include "bancodados.php";
+
     remover();
 
     function remover(){
 
         $num = $_GET["num"];
 
-        $dados = file('banco.txt'); 
-
-        $total = count($dados); 
-
-        $resultado = ''; 
-        for($i=0; $i<$total; $i++){ 
-        if($i == $num){ 
-
+        if(removerRegistro($num)){
+            header("Location: index.php");
         } else {
-            $resultado .= $dados[$i];
+            echo "OCORREU UM ERRO AO REMOVER ESSE REGISTRO";
         }
-        } 
-
-         $arquivo = fopen('banco.txt', 'w'); 
-         fwrite($arquivo, $resultado); 
-         fclose($arquivo);
-         
-         header("Location: index.php");
     }
 ?>

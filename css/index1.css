@@ -1,0 +1,38 @@
+th {
+    font-weight: bold;
+    border: 2px solid black;
+    color: steelblue;
+    background-color: #ccc;
+    font-size: 8px;
+}
+
+table {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-spacing: 0.7px;
+    width: 400px;
+}
+
+td {
+    border: 2px solid black;
+    text-align: center;
+    height: 80px;
+    width: 20%;
+}
+
+p {
+    margin: 0;
+    color: red;
+    font-size: 10px;
+}
+
+b {
+    font-size: 11px;
+}
+
+.bt {
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-top: 15px;
+    width: 100px;
+}
